@@ -1,140 +1,186 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil Estudiantil</title>
+    <title>formularios</title>
 
-    <link rel="stylesheet" href="css/estilos.css"> 
-    <style>
-    .informacion_personal {
-        background-color: #d1f7ea;
-        padding: 20px;
-        border: 5px solid #7fa492;
-        margin-bottom: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif
-      }
-      
-      .informativo {
-        padding: 10px;
-        border: 1px solid #ccc;
-        margin-bottom: 10px;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      }
-      
-      .informacion_academica {
-        background-color: #f1f0c3;
-        padding: 20px;
-        border: 5px solid #9a589f;
-        margin-bottom: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-      
-      .academico {
-        padding: 10px;
-        border: 1px solid #204832;
-        margin-bottom: 10px;
-      }
-      
-      .perfil {
-        background-color: #a1c4f8;
-        padding: 20px;
-        border: 3px solid #45013f;
-        margin-bottom: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-      }
-      
-      .perfil .info {
-        padding: 10px;
-        border: 1px solid #013545;
-        margin-bottom: 10px;
-        font-family: fantasy
-      }
-      .proyeccion{
-        background-color: #f1c3e7;
-        padding: 20px;
-        border: 5px solid #9f8c58;
-        margin-bottom: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css"> 
+
 </head>
 
-
 <body>
-    <div class="perfil">
-
-        <div class="info">
-            Samuel Martinez
-        </div>
-        <img src="images/samuel1.jpeg" width="10%" height="10%" alt="Mi Imagen de Perfil">
-    </div>
-
-    <div class="informacion_personal">
-        <h2>Informacion Personal</h2>
-        <div class="informativo">
-            Nombres: <strong>Samuel</strong>
-        </div>
-        <div class="informativo">
-            Apellidos: <strong>Martinez Castillo</strong>
-        </div>
-        <div class="informativo">
-            Apellidos: <strong>Martinez Castillo</strong>
-        </div>
-        <div class="informativo">
-            Signo zodiacal: <strong>Escorpio</strong>
-        </div>
-        <div class="informativo">
-            Sector donde residen: <strong>Madre vieja norte</strong>
-        </div>
-        <div class="informativo">
-            Correo electronico: <strong>samuel02.sam@gmail.com</strong>
-        </div>
-        <div class="informativo">
-            Telefono: <strong>829-348-3066</strong>
-        </div>
+    <div class="container mt-5">
+    <div class="rom g-4 g-3">
+    <div class="rom">
+    <h1 class="text-center text-decoration-underline text-primary">formulario de solicitud de trabajo
+    </h1>
 
     </div>
-
-    <div class="informacion_academica">
-        <h2>Informacion Academica</h2>
-        <div class="academico">
-            Universidad: <strong>Eugenio Maria De Hosto</strong>
-        </div>
-        <div class="academico">
-            Matricula: <strong>sc-2022-0283</strong>
-        </div>
-        <div class="academico">
-            carrera: <strong>Sistemas Computacionales</strong>
-        </div>
-        <div class="academico">
-            Semestre: <strong>5to Semestre</strong>
-        </div>
-        <div class="academico">
-            Materia: <strong>Programacion 3</strong>
+        <form class="row g-3">
+      <div class="row g-2">
+        <div class="col-md-6">
+          <label for="nombre" class="form-lebel">Nombres</label>
+          <input type="text" class="form-control" id="nombres" name="nombres">
         </div>
 
+             <div class="col-md-6">
+              <label for="apellido" class="form-lebel"> Apellidos</label>
+              <input type="text" class="form-control" id="apellidos" name="apellidos">
+             </div>
+      </div>
+
+      <div class="row g-2">
+            <div class="col-md-6">
+              <label for="cedula" class="form-lebel"> Cedula <b>sin guiones</b></label>
+              <input type="number" max="11" class="form-control" id="cedula" name="cedula">
+            </div>
+       </div>
+
+       <div class="row g-2">
+        <div class="col-md-4">
+          <label for="fecha_de_nacimiento" class="form-lebel">fecha_de_nacimiento </label>
+          <input type="date" class="form-control" id="fecha_de_nacimiento" name="fecha_de_nacimiento">
+          </div>
+      </div>
+
+   <div class="col-md-4">
+    <label for="genero" class="form-label">Genero</label>
+    <select id="genero" class="form-select" name="genero">
+      <option selected="">escoger...</option>
+      <option value="femenino">Femenino</option>
+      <option value="masculino">Masculino</option>
+      <option value="otros">otros</option>
+    </select>
+   </div>
+
+    <div class="row g-2">
+      <div class="col-md-4">
+        <label for="email" class="form-lebel">Correo</label>
+        <input type="email" class="form-control" id="email" name="email">
+      </div>
+
+           <div class="col-md-4">
+            <label for="telefono" class="form-lebel">Telefono</label>
+            <input type="number" class="form-control" id="telefono" name="telefono">
+           </div>
+
+           <div class="col-md-4">
+            <label for="movil" class="form-lebel">Celular</label>
+            <input type="number" class="form-control" id="movil" name="movil">
+           </div>
     </div>
 
-    <div class="proyeccion">
-        <h2>Proyección a Futuro</h2>
-        <div>
-           Mi proyeccion a futuro es ser un buen programador y crear mis propios proyectos, 
-           
-        </div>
-        <div>
-            trabajar en una empresa budena para mejorar mi calidad de viada.
-        </div>
-        <div>
-            Lo mas importante de esta carrera es que me gusta y se que puedo ser bueno 
-           
-        </div>
-        <div>
-            en la programacion
+    
+
+      <div class="row g-2">
+        <label for="direccion" class="form-lebel">Direccion</label>
+        <div class="col-md-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="calle">Calle</span>
+                  <input type="text" id="calle" name="calle" class="form-control" placeholder="calle primera" aria-label="calle" aria-describedby="calle">
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="numero">Numero</span>
+                  <input type="text" id="numero" name="numero" class="form-control" placeholder="1B" aria-label="numero" aria-describedby="numero">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="edificio">Edificio</span>
+                  <input type="text" id="edificio" name="edificio" class="form-control" placeholder="Juan jose" aria-label="edificio" aria-describedby="edificio">
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="apartamento">Apartamento</span>
+                  <input type="text" id="edificio" name="apartamento" class="form-control" placeholder="5B" aria-label="apartamento" aria-describedby="apartamento">
+                </div>
+              </div>
+
+            <div class="row g-2">
+              <div class="col-md-4">
+                <label for="provincia" class="form-label">Provincias</label>
+                <select id="provincia" class="form-select" name="provincia">
+                  <option selected="">escoger...</option>
+                  <option value="san cristobal">San Cristobal</option>
+                  <option value="santo domingo">Santo Domingo</option>
+                  <option value="san juan">San Juan</option>
+                  <option value="barahona">Barahona</option>
+                </select>
+               </div> 
+              </div>
+              <div class="row g-2">
+                <div class="col-md-4">
+                  <label for="sector" class="form-label">Sector</label>
+                  <select id="sector" class="form-select" name="sector">
+                    <option selected="">escoger...</option>
+                    <option value="Centro de la ciudad">Centro de la ciudad</option>
+                    <option value="Municipio de cabesera">Municipio de cabesera</option>
+                  </select>
+                 </div> 
+              </div> 
+
+              <div class="col-md-4">
+                <label for="barrio" class="form-lebel">Barrio</label>
+                <input type="text" placeholder="vella vista" class="form-control" id="barrio" name="barrio">
+               </div>
         </div>
 
+
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected="">Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
     </div>
+</div>
 </body>
-
 </html>
+
+
+
+
+    
